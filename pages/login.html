@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/stylelogin.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+            <div class="caja-logo">
+                <h1><img src="../storage/imagenes/Logo-Quality.jpg"></h1>
+                <h1>QVision</h1>
+            </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="">Inventario</a></li>
+            <li><a href="clientes.html">Clientes</a></li>
+            <li><a href="">Historias Clinicas</a></li>
+            <li><a href="">Agendamiento citas</a></li>
+            <li><a href="">Cotizaciones</a></li>
+            <li><a href="login.html" >Login</a></li> 
+        </ul>
+    </nav>
+
+    <div class="login-container">
+        <form onSubmit="" class="login-form">
+            <img src="../storage/imagenes/Logo-Quality.jpg">
+            <input type="text" placeholder="Ingrese su usuario" value="usuario" />
+            <input type="password" placeholder="Ingrese su Contraseña" value="password" />
+            <button type="submit" onclick="alerta()">Ingresar</button>
+        </form>
+    </div>
+
+    <footer>
+        <!-- <img src="imagenes/logo-opt2.png"> -->
+        <img src="../storage/imagenes/Logo-Quality.jpg">
+        <p class="copyright">&copy Copyright Quality Vision - 2023</p>
+    </footer>
+</body>
+<script>
+    function alerta() {
+        // alert("No digas mamadas Mary Jane");
+        alert("La contraseña o el usuario es erróneo. Digítelos nuevamente");
+    }
+</script>
+
+</html>

@@ -1,0 +1,157 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #0692d4;
+    padding: 10px 0;
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #0692d4;
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    background: url(../storage/imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.caja-logo {
+    /* display: inline-block; */
+    margin: 0 0 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+    font-size: 43px;
+
+}
+
+.caja-logo h1 {
+    margin: 5px;
+}
+
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* Media queries para ajustar el diseño en dispositivos móviles y portátiles */
+@media (max-width: 767px) {
+    header {
+        padding: 5px 0;
+    }
+
+    img {
+        width: 80px;
+    }
+
+    nav {
+        top: auto;
+        bottom: 0;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    .caja-logo {
+        margin: 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .principal {
+        width: 90%;
+        padding: 2em 0;
+    }
+
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+
+    .utensilios {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .principal {
+        width: 90%;
+        max-width: 800px;
+    }
+}
